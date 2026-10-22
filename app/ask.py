@@ -25,11 +25,20 @@ def ask(question: str) -> str:
     client = genai.Client(api_key=get_api_key())
     response = client.models.generate_content(model=MODEL, contents=question)
 
-    # TODO(第1回 演習): response.usage_metadata から
-    #   入力トークン数と出力トークン数を表示してみよう（Copilotに頼んでよい）
+    #    # 入力・出力トークン数を取得して表示
+    usage = response.usage_metadata
 
-    return response.text
+    if usage is not None:
+        input_tokens = usage.prompt_token_count
+        output_tokens = usage.candidates_token_count
 
+        print(f"[入力トークン数] {input_tokens}")
+        print(f"[出力トークン数] {output_tokens}")
+        print(f"[合計トークン数] {usage.total_token_count}\n")
+    else:
+        print("[トークン数] 取得できませんでした。\n")
+
+    return response.text or ""
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="素のLLMに質問する")
