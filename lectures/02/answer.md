@@ -1,19 +1,20 @@
 # 第2回 解答
 
-## 演習
+## 演習 ## 宿題
 
-- 使ったモデル・設定（`result.json` の `config` から）：
-- 自分で学習を実行したか（`executed_training_myself`）：はい / いいえ（実行できた範囲：　）
-- 学習前：`format_rate` =　 / `content_rate` =　
-- 学習後：`format_rate` =　 / `content_rate` =　
-- 退行した質問：
-- 学習後に残った失敗と、その型（根拠なしの質問に断定した / 根拠ありの質問に確認要求で逃げた / 形式の崩れ）：
-- 知識を問う質問（セクション 6）の結果（学習前の分類 → 学習後の分類）と気づいたこと：
-- 学習で変わったこと・変わらなかったこと：
+T4 GPUへの接続ができず、lora_format_tuning.ipynbを動作することができませんでした。
+ライセンスの確認やネットワークの変更を行いましたが、ダメでした。
 
-## 宿題
+[object CloseEvent]
+Error: [object CloseEvent]
+    at nR (https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:2799:326)
+    at https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:2787:294
+    at next (<anonymous>)
+    at https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:6:194
+    at new Promise (<anonymous>)
+    at kaa (https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:6:87)
+    at n (https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:6:225)
+    at mR (https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:2787:57)
+    at https://ssl.gstatic.com/colaboratory-static/common/28d4ae86a8647068cc7f21991829812c/external_binary_l10n__ja.js:8097:477
+    at Generator.throw (<anonymous>)
 
-- 取り組んだレベル：基礎 / 実装 / 発展
-- 変えた設定やデータ：
-- 結果（比較表や数字）：
-- ファインチューニングが向く場面・向かない場面についての考察：
